@@ -7,6 +7,7 @@ sudo pacman -S base-devel git bc kmod inetutils \
   linux-headers \
   autoconf libtool gawk uuid-runtime
 
+zcat /proc/config.gz > config/kernel.config
 
 cd kernel
 git clone --depth=1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
