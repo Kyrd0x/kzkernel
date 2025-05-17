@@ -1,0 +1,82 @@
+# === Global exclusions ===
+*.log
+*.swp
+*.tmp
+*.bak
+*.old
+*.orig
+*~
+
+# === Build artifacts ===
+*.o
+*.ko
+*.mod.c
+*.cmd
+*.a
+*.so
+*.d
+*.dwo
+*.symtypes
+*.gcno
+*.gcda
+*.gcov
+
+# === Kernel source build ===
+kernel/linux/arch/*/boot/
+kernel/linux/vmlinux*
+kernel/linux/System.map*
+kernel/linux/.config.old
+kernel/linux/.version
+kernel/linux/Module.symvers
+kernel/linux/modules.builtin*
+kernel/linux/modules.order
+kernel/linux/init/*.o
+kernel/linux/include/config/
+kernel/linux/.tmp_versions/
+kernel/linux/.vmlinux*
+kernel/linux/include/generated/
+
+# === ZFS build artifacts ===
+zfs/zfs-git/lib/
+zfs/zfs-git/module/
+zfs/zfs-git/config.status
+zfs/zfs-git/config.cache
+zfs/zfs-git/config.log
+zfs/zfs-git/Makefile
+zfs/zfs-git/build/
+zfs/zfs-git/*.lo
+zfs/zfs-git/*.la
+zfs/zfs-git/*.o
+
+# === Autotools/Build system ===
+/autom4te.cache
+/aclocal.m4
+/Makefile.in
+/configure
+/depcomp
+/install-sh
+/missing
+/stamp-h1
+
+# === Backups ===
+*.tar
+*.tar.gz
+*.zip
+*.xz
+*.bz2
+*.img
+*.iso
+
+# === IDE/editor/project files ===
+.vscode/
+.idea/
+*.iml
+.DS_Store
+*.user
+*.sublime-*
+*.project
+*.cproject
+*.directory
+
+# === Custom local overrides ===
+config/kernel.config.local
